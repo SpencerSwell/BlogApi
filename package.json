@@ -1,0 +1,26 @@
+{
+  "name": "blogapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "module.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aljmiller87/BlogAPI.git"
+  },
+  "author": "Alex Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aljmiller87/BlogAPI/issues"
+  },
+  "homepage": "https://github.com/aljmiller87/BlogAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mocha": "^3.2.0",
+    "uuid": "^3.0.1"
+  }
+}
