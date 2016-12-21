@@ -14,6 +14,7 @@ BlogPosts.create('types of trees','sycammore,elm,etc.','Bilbo baggins', 'Dec 16'
 
 router.get('/', function getBlogPosts (req, res)  {
 	res.send(BlogPosts.get());
+	sendStatus(res, 200);
 });
 
 function sendStatus(res, code) {

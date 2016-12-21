@@ -60,10 +60,10 @@ describe ('router', function router () {
  					return chai.request(app)
  					expect.res.status.to.be(202)
 
- 				})
- 			})
+ 				});
+ 			});
 
- 	    })
+ 	    });
 	
 	it('Will update a post if given the  id of a current post', function() {
 
@@ -72,7 +72,7 @@ describe ('router', function router () {
 		.then(function(res) {
 			
 			return chai.request(app)
-		let updatedPost = {title:'new', content:'new', author:'new', publishDate:'new', id:`{res.body[1].id}`};
+		var updatedPost = {title:'new', content:'new', author:'new', publishDate:'new', id:`{res.body[1].id}`};
 		
 			return chai.request(app)
 			.then(function (res) {
